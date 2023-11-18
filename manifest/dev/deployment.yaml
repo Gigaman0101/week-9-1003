@@ -23,5 +23,5 @@ spec:
           envFrom:
             - secretRef:
                 name: week-9-tcc231001
-            - configmapRef:
+            - configMapRef:
                 name: week-9-tcc231001
