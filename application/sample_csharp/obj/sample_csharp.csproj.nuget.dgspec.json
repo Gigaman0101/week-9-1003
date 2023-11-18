@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ubuntu/week-9/week-9-1003/application/sample_csharp/sample_csharp.csproj": {}
+    "C:\\Users\\naser\\OneDrive\\เดสก์ท็อป\\week9\\week-9-1003\\application\\sample_csharp\\sample_csharp.csproj": {}
   },
   "projects": {
-    "/home/ubuntu/week-9/week-9-1003/application/sample_csharp/sample_csharp.csproj": {
+    "C:\\Users\\naser\\OneDrive\\เดสก์ท็อป\\week9\\week-9-1003\\application\\sample_csharp\\sample_csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ubuntu/week-9/week-9-1003/application/sample_csharp/sample_csharp.csproj",
+        "projectUniqueName": "C:\\Users\\naser\\OneDrive\\เดสก์ท็อป\\week9\\week-9-1003\\application\\sample_csharp\\sample_csharp.csproj",
         "projectName": "sample_csharp",
-        "projectPath": "/home/ubuntu/week-9/week-9-1003/application/sample_csharp/sample_csharp.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/home/ubuntu/week-9/week-9-1003/application/sample_csharp/obj/",
+        "projectPath": "C:\\Users\\naser\\OneDrive\\เดสก์ท็อป\\week9\\week-9-1003\\application\\sample_csharp\\sample_csharp.csproj",
+        "packagesPath": "C:\\Users\\naser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\naser\\OneDrive\\เดสก์ท็อป\\week9\\week-9-1003\\application\\sample_csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\naser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

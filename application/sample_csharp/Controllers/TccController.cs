@@ -20,7 +20,13 @@ public class TccController : ControllerBase
     {
         var tz = _config["TZ"];
         var env = _config["ASPNETCORE_ENVIRONMENT"];
+        var connectionStringDefault = _config.GetConnectionString("Default");
 
-        return Ok(new { timezone = tz, environment = env });
+        return Ok(new
+        {
+            timezone = tz,
+            environment = env,
+            connectionStringDefault = connectionStringDefault
+        });
     }
 }
