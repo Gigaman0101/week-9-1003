@@ -99,4 +99,5 @@ jobs:
 
       - name: Update deploy to k8s
         run: |
-          yq eval '.spec.template.spec.containers[0].image = ${{ vars.APP_IMAGE }}:${{ github.sha }}' deployment.yaml | kubectl apply -f -
+          export APP_IMAGE_URL=${{ vars.APP_IMAGE }}:${{ github.sha }}
+          yq eval --sub_env '.spec.template.spec.containers[0].image = $APP_IMAGE_URL' deployment.yaml | kubectl apply -f -
