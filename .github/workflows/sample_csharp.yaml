@@ -83,7 +83,9 @@ jobs:
 
       - name: Set container image in Deployment YAML
         run: |
-          sed -i "s|image: application_image|image: ${{ vars.APP_IMAGE }}:$GITHUB_SHA|g" deployment.yaml
+          # sed -i "s|image: application_image|image: ${{ vars.APP_IMAGE }}:$GITHUB_SHA|g" deployment.yaml
+          # | export IMAGE_NAME="${{ vars.APP_IMAGE }}:${{ github.sha }}"
+          yq eval '.spec.template.spec.containers[0].image = ${{ vars.APP_IMAGE }}:${{ github.sha }}' deployment.yaml | kubectl apply -f -
 
       - name: Set up kubeconfig
         run: echo "${{ secrets.KUBE_CONFIG }}" > kubeconfig
