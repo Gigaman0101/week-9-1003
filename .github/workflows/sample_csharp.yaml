@@ -102,3 +102,12 @@ jobs:
           export APP_IMAGE_URL=${{ vars.APP_IMAGE }}:${{ github.sha }}
           yq -i '.spec.template.spec.containers[0].image = strenv(APP_IMAGE_URL)' deployment.yaml
           kubectl apply -f deployment.yaml
+      - name: Notify Result
+        run: |# Add your notification logic here# For example, sending a notification to Slack or Discord
+          echo "Workflow completed with status ${{ job.status }}"
+# post:
+#   name: Notify Result
+#   if: always()  # This ensures the step runs even if previous steps fail
+#   run: |# Add your notification logic here# For example, sending a notification to Slack or Discord
+#         echo "Workflow completed with status ${{ job.status }}"
+
